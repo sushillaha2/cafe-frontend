@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #fffaf3;
+  color: #fff;
+}
+
+
+/* HERO SECTION */
+.heroAboutUs {
+  height: 12vh;
+  background: url('../../../assets/Images/Top_banner.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+}
+
+
+
+.heroLogin {
+  background-image: url("https://images.unsplash.com/photo-1560448070-c458d5f5d26e");
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  width: 100%;
+}
+
+.login-section {
+  background-color: #fffaf3;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #3e2723;
+}
+
+.login-section h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.login-subheading {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+
+.login-box {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff3e6;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.login-form input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  background-color: #dea345;
+  color: #3e2723;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #d09035;
+}
+
+.login-helper {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.login-helper a {
+  color: #3e2723;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .login-box {
+    padding: 1.5rem;
+  }
+
+  .login-section h2 {
+    font-size: 2.2rem;
+  }
+}

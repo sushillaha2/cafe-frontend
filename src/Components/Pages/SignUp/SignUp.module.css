@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #fffaf3;
+  color: #fff;
+}
+
+
+/* Top Banner*/
+.heroAboutUs {
+  height: 12vh;
+  background: url('../../../assets/Images/Top_banner.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+}
+
+
+
+
+.signup-section {
+  padding: 4rem 2rem;
+  background-color: #fffaf3;
+  text-align: center;
+  color: #3e2723;
+}
+
+.signup-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.signup-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  color: #6a4e42;
+}
+
+.signup-box {
+  background-color: #fff2e1;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.signup-form input {
+  padding: 0.9rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  padding: 0.9rem;
+  background-color: #d9992b;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #b88120;
+}
+
+.signup-bottom-text {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.signup-bottom-text a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #3e2723;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .signup-box {
+    padding: 1.5rem 1rem;
+  }
+
+  .signup-title {
+    font-size: 2rem;
+  }
+
+  .signup-subtitle {
+    font-size: 1rem;
+  }
+}

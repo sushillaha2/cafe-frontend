@@ -1,0 +1,122 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #fffaf3;
+  color: #fff;
+}
+
+/* -----------------------------
+   Footer Section
+------------------------------ */
+.footer {
+  background: url('../../assets/Images/banner_bottom_2.png') center/cover no-repeat;
+  color: white;
+  padding: 4rem 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Footer Branding */
+.footer-brand {
+  flex: 5 1 300px;
+}
+
+.footer-brand h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Social Icons */
+.social-icons i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.footer .social-icons a:hover i {
+  color: #f4c16f;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  flex: 2 1 500px;
+}
+
+.footer-links div h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links div p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  display: block;
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+
+
+/* -----------------------------
+   Responsive Styles
+------------------------------ */
+@media (max-width: 768px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 55%;
+    margin: 0.3rem 0;
+    border-radius: 20px;
+  }
+
+  .footer-links {
+    margin-top: 5%;
+    justify-content: space-between;
+  }
+}

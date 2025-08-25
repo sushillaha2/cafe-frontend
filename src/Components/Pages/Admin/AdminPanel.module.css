@@ -1,0 +1,150 @@
+/* Hero Banner */
+.heroAdmin {
+  height: 12vh;
+  background: url("../../../assets/Images/admin_banner.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+/* Section */
+.admin-section {
+  background-color: #fffaf3;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #3e2723;
+}
+
+.admin-section h2 {
+  font-size: clamp(1.8rem, 2.5vw, 2.8rem); /* Responsive font */
+  margin-bottom: 1rem;
+}
+
+.admin-tagline {
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+  color: #666;
+  margin-bottom: 2.5rem;
+  padding: 0 1rem;
+}
+
+/* Dashboard Stats */
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background: #fff;
+  color: #3e2723;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 4px 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: bold;
+}
+
+/* Orders Section */
+.orders-section {
+  margin-top: 2rem;
+  overflow-x: auto; /* Mobile ke liye scroll */
+}
+
+.toggle-btn {
+  background-color: #3e2723;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+}
+
+.toggle-btn:hover {
+  background-color: #5a3b2c;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  min-width: 600px; /* Table readable rahe */
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: center;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.orders-table th {
+  background-color: #3e2723;
+  color: #fff;
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .admin-section {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-section {
+    padding: 2rem 1rem;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .orders-table {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr; /* Single column on small devices */
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .orders-table {
+    font-size: 0.75rem;
+  }
+
+  .toggle-btn {
+    width: 100%;
+  }
+}
