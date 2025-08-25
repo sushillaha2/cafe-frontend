@@ -1,24 +1,8 @@
-// // src/api/axios.js
-// import axios from 'axios';
-
-// export default axios.create({
-//   baseURL: 'http://localhost:5000',
-// });
-
-
-
-
-
 import axios from "axios";
 
-// Vite ke env variable se API base URL lo
-const API_BASE = import.meta.env.VITE_API_BASE;
-
-console.log("API BASE URL:", API_BASE);
-
-export default axios.create({
-  baseURL: API_BASE,
-  headers: {
-    "Content-Type": "application/json",
-  },
+const instance = axios.create({
+  baseURL: "https://cafe-backend-0ibj.onrender.com", // backend ka URL
+  withCredentials: false,
 });
+
+export default instance;
